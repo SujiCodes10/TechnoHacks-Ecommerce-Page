@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TechnoCart</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class ="site-header">
+            <h1>TechnoCart</h1>
+            <p>Welcome to <strong>TechnoCart</strong> - where Technology meets Trust  ! Discover top-notch Smart gadgets,
+             Unbeatable prices, and seamless Shopping. From stylish Smart Watches to powerful Earbuds, We bring
+             you the Best - all at your Fingertips. Shop smart, Shop easy, Shop TechnoCart !</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+            <main id="home">
+                <section id="products" class="product-section">
+                    <div class="product">
+                        <img src="image/smartwatch.jpg" alt="Smart Watch">
+                        <h3>Smart Watch</h3>
+                        <p>&#8377;2,499</p>
+                        <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="image/earbuds.jpg" alt="Wireless Earbuds">
+                        <h3>Wireless Earbuds</h3>
+                        
+                        <p>&#8377;1,299</p>
+                        <button onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="image/speaker.jpg" alt="Bluetooth Speaker">
+                        <h3>Bluetooth Speaker</h3>
+                       
+                        <p>&#8377;1,599</p>
+                        <button onclick="addToCart('Bluetooth Speaker')">Add to Cart</button>
+                    </div>
+                </section>
+                <div id="thankyou-message"></div>
+            </main>
+            <footer id="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p>&copy; 2025 TechnoCart. All Rights Reserved.</p>
+            </footer>
+            <script src="script.js"></script>
+        </body>
+</html>
